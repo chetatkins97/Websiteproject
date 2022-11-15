@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chet's Guitars</title>
+    <link rel="stylesheet" href="../Styles/contact_form_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+   <body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="../bilder_img/LogoMakr-4m3cd1.png" alt=""> </a> 
+            <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Martin.html">MARTIN</a></li>
+                    <li><a href="contact_form.html">CONTACT</a></li>
+                </ul>
+               </div> 
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+              
+           
+
+    </section>
+
+   
+   
+     <script>
+        var navlinks = document.getElementById("navLinks");
+          function showMenu(){
+           navlinks.style.right = "0";
+           }
+          function hideMenu(){
+           navlinks.style.right = "-200px";
+           }
+    </script>
+
+    
+
+
+
+
+<div class="contact-form">
+      <h1>Contact us</h1>
+       <p> If you want a price proposal or if you have any questions.</p>
+     
+      <form action="mailto:viktor.lindfors@hotmail.com" method="post" enctype="text/plain">
+
+        <div class="textb">
+        <label>Name :</label>
+          <input type="text" name="text" value="" placeholder="Name">
+    </div>
+
+    
+    <div class="textb">
+          <label>Email :</label>
+            <input type="text" name="Email" placeholder="Email" required>
+      </div>
+
+
+    <div class="textb">
+        <label>Phone Number :</label>
+          <input type="text" name="Phone Number" placeholder="Phone Number">
+    </div>
+
+    <div class="textb">
+        <label>Message :</label>
+         <textarea name="textarea" required></textarea>
+    </div>
+    
+     <div class="btn">
+       
+      <input type="submit" value="send">
+
+     </div>
+
+    </form>
+
+
+
+
+
+
+
+
+</body>
+</html>

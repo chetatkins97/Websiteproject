@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../bilder_img/headstock-ipad.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 170px;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+
+
+
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #dbc625;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+  
+    .nav-links ul li{
+     display: block;
+    }
+   
+    .nav-links{
+       position: absolute;
+       background: #dbc625;
+       height: 100vh;
+       width: 200px;
+       top: 0;
+       right: -200px;
+       text-align: left;
+       z-index: 2;
+       transition: 1s;
+   
+     }  
+     nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+     }
+     .nav-links ul {
+        padding: 30px;
+
+
+     }
+
+   }
+
+   .contact-form {
+    width: 85%;
+    max-width: 600px;
+    background: rgb(243, 233, 221);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 30px #292828b3;
+  }
+
+  .contact-form h1{
+   margin-top: 0;
+   font-weight: 200;
+   font-weight: 600;
+   color: black;
+  }
+
+  .textb{
+    border: 1px solid rgb(113, 110, 110);
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+  }
+
+  .textb label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px ;
+  }
+
+ .textb input,
+ .textb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+
+ }
+
+ .contact-form p {
+    font-family:Arial, Helvetica, sans-serif
+ }
+ 

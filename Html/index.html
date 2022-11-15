@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chet's Guitars</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="../bilder_img/LogoMakr-4m3cd1.png" alt=""> </a> 
+            <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Martin.html">MARTIN</a></li>
+                    <li><a href="contact_form.html">CONTACT</a></li>
+                </ul>
+               </div> 
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+         
+       <div class="text-box">
+            <h1>Vintage Martin Guitars</h1>
+            <p>Chet Guitar's is a family owned business that has been around since 1943. <br> We offer a wide selection of used exclusive vintage Martin Guitars.</p>
+            <h4>'Not many but much' - C.F. MARTIN & CO.</h4>
+            
+            <div>
+              
+            
+       </div>
+
+       <div class="info"> 
+
+       </div>
+
+    </section>
+
+  
+    <script>
+         var navlinks = document.getElementById("navLinks");
+         
+         function showMenu(){
+            navlinks.style.right = "0";
+         }
+         function hideMenu(){
+            navlinks.style.right = "-200px";
+         }
+
+    </script>
+
+
+</body>
+
+</html>
